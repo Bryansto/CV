@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  background-color: grey;
+  height: 4000px;
+}
+
+.img1 {
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.img2 {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 60%;
+  z-index: 3;
+}
+
+.head {
+  z-index: 2;
+  position: absolute;
+  top: 25px;
+  height: 500px;
+  background-color: blue;
+}
+
+.head2 {
+  z-index: 2;
+  position: absolute;
+  top: 525px;
+  height: 500px;
+  background-color: green;
+
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  top: 1000px;
+  height: 3000px
+
+}
