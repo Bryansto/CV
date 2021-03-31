@@ -4,18 +4,14 @@ body {
   background-color: #E7E7E7;
   color: #001726;
   height: 3000px;
+  text-align: center;
 }
 
 h1 {
   margin: 0 auto 0 auto;
-  width: 25%;
   font-family: verdana, cursive;
   font-weight: lighter;
-  font-size: 2.5em;
-}
-
-h3 {
-  margin-bottom: 0;
+  font-size: 5rem;
 }
 
 p {
@@ -28,9 +24,7 @@ hr {
   border-width: 5px;
 }
 
-
 /* ________________ Classes ________________ */
-
 .background_top {
   position: fixed;
   width: 100%;
@@ -43,9 +37,8 @@ hr {
   position: relative;
   top: 100px;
   height: 150px;
-  right: 0;
-  left: 0;
-  text-align: center;
+  width: 50%;
+  margin: auto;
   z-index: 2;
 }
 
@@ -63,14 +56,59 @@ hr {
   position: relative;
   margin-bottom: 50px;
   width: 100%;
+  height: 400px;
   align-items: center;
+  text-align: center;
 }
 
-.exp_list {
+.exp_breakout {
   position: relative;
-  text-align: left;
-  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  height: 300px
+}
+
+.experience h3 {
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+
+.experience p {
+  line-height: 1.5;
   padding: 0;
+  margin: 0;
+}
+
+.exp_edu {
+  position: relative;
+  padding: 0;
+  height: 100%
+}
+
+.exp_tab {
+  position: relative;
+  margin: 50px;
+  height: 100%;
+  transition: box-shadow 1s ease .5s;
+}
+
+.exp_tab:hover {
+  box-shadow: -5px -5px 10px 5px rgba(9, 43, 66, 0.1), 5px 5px 10px 5px rgba(9, 43, 66, 0.1);
+  transition: box-shadow 1s ease;
+}
+
+.exp_tab:active {
+  box-shadow: inset -5px -5px 10px 5px rgba(9, 43, 66, 0.1), inset 5px 5px 10px 5px rgba(9, 43, 66, 0.1);
+}
+
+.exp_tab img {
+  position: relative;
+  height: 50%;
+  width: 50%;
 }
 
 .exp_div {
@@ -99,6 +137,7 @@ hr {
   font-weight: lighter;
   font-size: 2em;
   text-align: center;
+  width: 50%;
 }
 
 .social_link_images {
@@ -119,4 +158,12 @@ hr {
   width: 40px;
   margin: 0;
   z-index: 10;
+}
+
+.carousel-control-next  {
+  z-index: 5;
+}
+
+.carousel-control-next-icon {
+  z-index: 5;
 }
